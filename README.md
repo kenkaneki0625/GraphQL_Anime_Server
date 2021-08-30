@@ -1,6 +1,6 @@
 # GraphQL_Anime_Server
 
-Project runs at http://localhost:4000/graphql
+Project runs at http://localhost:5000/graphql
 
 ## HOW TO RUN
 1. `npm install`
