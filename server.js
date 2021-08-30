@@ -130,6 +130,14 @@ const RootQueryType = new GraphQLObjectType({
       description: 'List of All Characters',
       resolve: () => characters
     },
+    character: {
+      type: CharacterType,
+      description: 'A Single Character',
+      args: {
+        id: { type: GraphQLInt }
+      },
+      resolve: (parent, args) => characters.find(character => character.id === args.id)
+    }
   })
 })
 
